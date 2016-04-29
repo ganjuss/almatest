@@ -24,21 +24,24 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <div class="output" ></div>
 <form:form action="${authenticate}" commandName="loginBean" method="POST">
 
-Enter your name:<input name="name" type="text"/>
+Enter your username:<input name="name" type="text"/>
 <form:hidden path="username" id="username"/>
-
+Enter your password:<input name="password" type="text"/>
+<form:hidden path="password" id="password"/>
 <input type="submit"/>
 </form:form>
+
 <div>
 	<script type="application/json" class="hi__json" > ${hi} </script>
-	<script>
+	<!--  <script>
 		var hi__json = JSON.parse( $('.hi__json').html() );
 		var id = hi__json.id;
 		alert(id);
-	</script>
+	</script>-->
 </div>
 </body>
 </html>

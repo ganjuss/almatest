@@ -1,5 +1,6 @@
 package Bean;
 
+import java.util.List;
 
 public class NavigationBean
 {
@@ -9,7 +10,7 @@ public class NavigationBean
 
     private String navLink;
 
-    private SubNav subNav;
+    private List<SubNav> subNav;
 
     public String getId ()
     {
@@ -41,12 +42,12 @@ public class NavigationBean
         this.navLink = navLink;
     }
 
-    public SubNav getSubNav ()
+    public List<SubNav> getSubNav ()
     {
         return subNav;
     }
 
-    public void setSubNav (SubNav subNav)
+    public void setSubNav (List<SubNav> subNav)
     {
         this.subNav = subNav;
     }
