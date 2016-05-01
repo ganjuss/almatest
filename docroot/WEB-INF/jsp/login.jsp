@@ -20,6 +20,10 @@
 <portlet:actionURL var="authenticate">
 <portlet:param name="action" value="authenticate"/>
 </portlet:actionURL>
+<portlet:actionURL var="facebook">
+<portlet:param name="action" value="facebook"/>
+</portlet:actionURL>
+
 
 <title>Insert title here</title>
 </head>
@@ -32,7 +36,13 @@ Enter your username:<input name="name" type="text"/>
 <form:hidden path="username" id="username"/>
 Enter your password:<input name="password" type="text"/>
 <form:hidden path="password" id="password"/>
+<input name="token" type="text" style="display:none" value="${token}"/>
+<form:hidden path="password" id="password"/>
 <input type="submit"/>
+</form:form>
+<form:form action="${facebook}"  method="POST">
+
+<input type="submit" value="submit"/>
 </form:form>
 
 <div>

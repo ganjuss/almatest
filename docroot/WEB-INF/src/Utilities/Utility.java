@@ -6,6 +6,8 @@ import java.util.List;
 import Bean.LoginBean;
 import Bean.NavigationBean;
 import Bean.SubNav;
+import java.security.SecureRandom;
+import java.math.BigInteger;
 
 public class Utility {
 
@@ -135,4 +137,11 @@ aboutusList.add(AboutussubNa);
 		navigationList.add(careers);
 		return navigationList;
 	}
+
+
+	  private SecureRandom random = new SecureRandom();
+
+	  public String nextSessionId() {
+	    return new BigInteger(130, random).toString(32);
+	  }
 }	

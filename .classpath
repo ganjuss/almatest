@@ -23,5 +23,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="docroot/WEB-INF/lib/spring-social-core-1.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="docroot/WEB-INF/lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="docroot/WEB-INF/lib/spring-social-facebook-2.0.3.RELEASE.jar"/>
 	<classpathentry kind="output" path="docroot/WEB-INF/classes"/>
 </classpath>

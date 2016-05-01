@@ -22,7 +22,7 @@
 	<property name="portletModeMap">
 	<map>
 	<entry key="VIEW">
-	<ref bean="loginController" />
+	<ref bean="loginController" />	
 	</entry>
 	</map>
 	</property>
